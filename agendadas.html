@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script type="text/javascript" src="Visibilidad.js"></script>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+      
+    <table id="Horas" border="0" width="1">
+        <thead>
+            <tr>
+                <th><label> Especialidad </label></th>
+                <th> Centro Medico </th>
+                <th> Nombre </th>
+                <th> Apellido </th>
+                <th> Fecha </th>
+                <th> Hora </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="hora1">
+        <h1 >Disponibilidad</h1>
+        <td> Urologia </td>
+        <td> El Monte</td>
+        <td> Pedro </td>
+        <td> Fernandez </td>
+        <td> 19/01/2019 </td>
+        <td> 9:30 </td>
+        <td><input id="but1" type="button" value="liberar" onclick="eliminarhorauno(),sinhoras()"></td>
+        </tr>
+        <tr id="hora2">
+            <td>Odontologia</td>
+            <td>Talagante</td>
+            <td>Jose</td>
+            <td>Perez</td>
+            <td>14/05/2018</td>
+            <td>17:00</td>
+            <td><input id="but2" type="button" value="liberar" onclick="eliminarhorados(),sinhoras()"></td>
+            
+            <table id="ninguna" border="0" style="display: none">
+        <thead>
+              <tr>
+             <td><h3>Paciente</h3></td>
+             <td><h3>No</h3></td>
+             <td><h3>Tiene</h3></td>
+             <td><h3>consultas</h3></td>
+              <td><h3>programadas</h3></td>
+            </tr>
+        </tbody>
+    </table>
+            </form>
+    </body>
+</html>

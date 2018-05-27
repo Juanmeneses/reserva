@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript" src="Validar.js"></script>
+        <form onsubmit="return registro() " >
+        <table border="0">
+            <thead>
+               <tr>
+      <th>Formulario de Registro</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                        <td><label>Ingrese su rut</label></td>
+                        <td> <input type="text" id="tx1" placeholder="Ej. 18666999-k" minlength="9" maxlength="10"></td>
+                        <td></td>
+                </tr>
+                <tr>
+                        <td> <label>Nombres</label></td>
+                        <td>  <input type="text"  id="tx2" placeholder="Primero" ></td>
+                        <td>  <input type="text"  id="tx12" placeholder="Segundo"></td>
+                </tr>
+                <tr>
+              <td> <label>Apellidos</label></td>
+                        <td> <input type="text" id="tx3" placeholder="primero" ></td>
+                        <td>  <input type="text"  id="tx4" placeholder="segundo"></td>
+                </tr>
+                <tr>
+                  <td>  <label>Fecha de nacimiento </label></td>
+                        <td><input type="date" id="dt1"></td>
+                        <td></td>
+                </tr>
+                <tr>
+                           <td>Genero</td>
+                        <td><label>Masculino</label><input type="radio" name="radio1" value="1"></td>
+                        <td> <label>Femenino </label> <input type="radio" name="radio1" value="2"> </td>
+                        
+                </tr>
+                <tr>
+                        <td><label>Numero de Contacto</label></td>
+                        <td> <input type="number"  id="tx8" placeholder="965744111"   ></td>
+                </tr>
+                <tr>
+                        <td> <label>Direccion de correo electronico</label></td>
+                        <td> <input type="text" id="tx9" placeholder="pepito@correo.cl" > </td>
+                </tr>
+                <tr>
+                       <td>Región</td>
+                       
+                            <td><select name="regiones"  id="select1" ">
+                                <option value="">Seleccione región </option> 
+                                <option value="1"> Arica y Parinacota</option>
+                                <option value="2"> Tarapacá </option>
+                                <option value="3"> Antofagasta</option>
+                                <option value="4"> Atacama </option>
+                                <option value="5"> Coquimbo</option>
+                                <option value="6"> Valparaiso</option>
+                                <option value="7"> Metropolitana</option>
+                                <option value="8"> Libertador General Bernardo O'higgins</option>
+                                <option value="9"> Maule</option>
+                                <option value="10">Biobio </option>
+                                <option value="11">La Araucania </option>
+                                <option value="12">Los Ríos </option>
+                                <option value="13">Los Lagos </option>
+                                <option value="14">Aysén </option>
+                                <option value="15">Magallanes y Antártica Chilena </option>
+                            </select></td>
+                       
+                     <tr>      
+                     <td><label>Provincias</label></td>
+                    
+                        <td><select name="provincias" id="provincia"   >
+
+                                <option value="">Seleccione Provincia </option> 
+                                <option value="1"> Santiago  </option>
+                                <option value="2"> Talagante </option>
+                                <option value="3"> Maipo     </option>
+                                <option value="4"> Chacabuco </option>
+                                <option value="5"> Melipilla </option>
+                                <option value="6"> Cordillera</option>
+                          
+                            </select>
+                        </td>
+                      </tr>       
+
+                      <tr>       
+                      <td><label>Comuna</label></td>                    
+                            <td>   <select name="Comunas" id="select2" >
+
+                                <option value="">Seleccione  Comuna </option> 
+                                <option value="1"> Talagante</option>
+                                <option value="2"> Peñaflor </option>
+                                <option value="3"> Isla de maipo</option>
+                                <option value="4"> El Monte</option>
+                                <option value="5"> Melipilla</option>
+                                </select>
+                            </td>    
+                           </tr>
+
+                    <tr>
+                        <td><label>Población</label></td>
+                       <td>
+                           <select name="poblaciónes" id="pob"   >
+
+                                <option value="">Seleccione  población </option> 
+                                <option value="1"> pob1  </option>
+                                <option value="2"> pob2 </option>
+                                <option value="3"> pob3     </option>
+                                <option value="4"> pob4 </option>
+                                <option value="5"> pob5 </option>
+                                <option value="6"> pob6 </option>
+                          
+                            </select>
+                       </td>
+                     </tr>  
+                       <td> <label>Dirección</label></td>
+
+                       <td><input type="text" id="tx10" placeholder=" av libertador bernardo o'higgins" "></td>
+                       <td><input type="number"  id="tx11" placeholder="2129" "></td>   
+                </tr>
+                <tr>   
+                            <td><label></label></td>                                                         
+                            <td><input type="text" id="block" placeholder="numero de block"></td>
+                            <td><input type="text" id="depto" placeholder="numero depto"></td>
+                </tr>
+                
+                <tr>
+                       <td><label>Previsión</label></td>
+
+                         <td> <select name=previsión id="select3">
+                                    
+                                        
+                                <option value="">Seleccione su Previsión </option> 
+                                <option value="1"> Fonasa</option>
+                                <option value="2"> Isapre </option>
+                                            
+                        </select></td>
+
+                </tr>
+                <tr>
+                        <td> <label>Contraseña</label></td>
+                        <td><input type="password" id="tx5"  minlength="6" maxlength="8" ></td>
+                        <td> <input type="password"  id="tx6" minlength="6" maxlength="8" placeholder="repita contraseña"></td>
+                </tr>
+                <tr>
+                        <td><input type="submit" name="registrar" id="boton1" value="registar usuario" > </td>
+
+                </tr>
+            </tbody>
+        </table>
+        </form>
+    </body>
+</html>

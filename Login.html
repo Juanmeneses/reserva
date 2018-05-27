@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script type="text/javascript" src="Validar.js"></script>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript" src="Validar.js"></script>
+        <form  onsubmit="return login(),validarut()">
+            <table border="0" align="center">
+                <thead>                   
+                        <th>Login de usuario</th>                  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <label>Ingrese su rut</label></td>
+                        <td> <input type="text" id="tx01" value placeholder="18666999-k" minlength="9" maxlength="10" onsubmit="return login(),"> </td>                       
+                    </tr>
+                    <tr>
+                        <td> <label>Contraseña</label></td>
+                        <td><input type = "password" value id="tx02" minlength="6" maxlength="8" onsubmit="return login()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="boton2" name="ingresar" value = "iniciar sesión" onsubmit="return login()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
